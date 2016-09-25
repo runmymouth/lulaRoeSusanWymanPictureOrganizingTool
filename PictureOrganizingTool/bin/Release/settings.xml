@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <SizesToLookFor>2,3,4,5,6,7,8,9,10,11,12,13,14,xxs,xs,s,m,l,xl,xxl,xxxl</SizesToLookFor>
+  <StyleNamesToLookFor>amelia,dds</StyleNamesToLookFor>
+  <addAlbumCovers>True</addAlbumCovers>
+  <addSizeCards>True</addSizeCards>
+  <AlbumCoverLocation>C:\LLR\albumCovers</AlbumCoverLocation>
+  <AlbumSizeCardsLocation>C:\LLR\sizeCards</AlbumSizeCardsLocation>
+  <pictureAlbumLocation>C:\LLR\Inventory</pictureAlbumLocation>
+  <outputLocation>c:\LLR\picturesOutput</outputLocation>
+  <exclusionPatterns>_ignore,_forget</exclusionPatterns>
+</Settings>
