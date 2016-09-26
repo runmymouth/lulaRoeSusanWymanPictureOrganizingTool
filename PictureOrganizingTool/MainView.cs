@@ -42,7 +42,7 @@ namespace WindowsFormsApplication1
         private void loadDataFromFile()
         {
             StyleNamesToLookFor.Text = "amelia,dds";
-            SizesToLookFor.Text = "2,3,4,5,6,7,8,9,10,11,12,13,14,xxs,xs,s,m,l,xl,xxl,xxxl";
+            SizesToLookFor.Text = "2,3,4,3-4,5,6,5-6,7,8,10,8-10,11,12,13,14,12-14,xxs,xs,s,m,l,xl,xxl,2xl,xxxl,3xl";
             addAlbumCovers.Checked = true;
             addSizeCards.Checked = true;
             AlbumCoverLocation.Text = "C:\\LLR\\albumCovers";
@@ -273,7 +273,7 @@ namespace WindowsFormsApplication1
                 if (styleSubString.ToLower().StartsWith(style.ToLower()))
                 {
                     outputFileName = outputFileName + getExtension(file);
-                    System.IO.File.Copy(files[0], outputFileName, true);
+                    System.IO.File.Copy(file, outputFileName, true);
                     location++;
                     return;
                 }
@@ -305,7 +305,7 @@ namespace WindowsFormsApplication1
                 if (sizeSubString.ToLower().StartsWith(size.ToLower()))
                 {
                     outputFileName = outputFileName + getExtension(file);
-                    System.IO.File.Copy(files[0], outputFileName, true);
+                    System.IO.File.Copy(file, outputFileName, true);
                     location++;
                     return;
                 }
